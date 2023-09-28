@@ -11,7 +11,7 @@ class Userpost {
     var likes:Int?=null
 
     @SerializedName("user")
-    var user:String?=null
+    var username:String?=null
 
 
     @SerializedName("userImageURL")

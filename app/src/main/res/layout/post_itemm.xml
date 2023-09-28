@@ -10,8 +10,8 @@
         android:id="@+id/imageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="۰dp"
-        android:layout_marginBottom="۰dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -21,11 +21,11 @@
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="۰dp"
-        android:layout_marginEnd="۰dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:text="qwetyujkmnbv"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,14 +53,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="-260dp"
         android:layout_marginTop="-250dp"
-        android:layout_marginBottom="۰dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintVertical_bias="0.600"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -88,15 +87,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-260dp"
-        android:layout_marginTop="-195dp"
-        android:layout_marginBottom="۰dp"
+        android:layout_marginTop="0dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintVertical_bias="0.100"
         tools:ignore="MissingConstraints">
 
         <TextView
