@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface postservice {
 
-    @GET("?key=25683553-328592f09b45deff6105e8e2d&q=yellow+flowers&image_type=photo")
+    @GET("https://www.aparat.com//etc/api/mostviewedvideos\n")
     fun getvideolist(): Call<post>
 }

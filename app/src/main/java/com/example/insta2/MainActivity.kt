@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         var retrofit: Retrofit? = null
         if (retrofit == null) {
             retrofit = Retrofit.Builder()
-                .baseUrl("https://pixabay.com/api/")
+                .baseUrl("https://www.aparat.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }

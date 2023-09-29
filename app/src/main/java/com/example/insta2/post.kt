@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 class post {
 
-    @SerializedName("hist")
+    @SerializedName("mostviewedvideos")
     var userpostarray:ArrayList<Userpost>? = null
 }
