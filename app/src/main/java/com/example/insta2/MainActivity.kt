@@ -14,9 +14,14 @@ import retrofit2.http.POST
 
 class MainActivity : AppCompatActivity() {
     lateinit var postadabter: postadabter
+    lateinit var storyadapter: storyadapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val recyclerView2=findViewById<RecyclerView>(R.id.Recyclerviewstory)
+        storyadapter = storyadapter()
+        recyclerView2.adapter=storyadapter
+        recyclerView2.layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         val recyclerview = findViewById<RecyclerView>(R.id.RecyclerView)
         postadabter = postadabter()
         recyclerview.adapter=postadabter
@@ -29,8 +34,9 @@ class MainActivity : AppCompatActivity() {
 
         callsevise?.enqueue(object:Callback<post>{
             override fun onResponse(call: Call<post>, response: Response<post>) {
-                var post=response.body()
-                postadabter.loadedState(post?.userpostarray)
+                var posts=response.body()
+                postadabter.loadedState(posts?.userpostarray)
+                storyadapter.loadedState(posts?.userpostarray)
             }
             override fun onFailure(call: Call<post>, t: Throwable) {
                 Log.d("TAGXX","onFailure:${t.message}")

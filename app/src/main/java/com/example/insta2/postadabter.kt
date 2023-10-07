@@ -18,12 +18,18 @@ class postadabter : AdapterRecyclerView<Userpost>(R.layout.post_itemm,0,0,0) {
         var view=viewHolder.itemView
         var txtusername=view.findViewById<TextView>(R.id.txtusername)
         var postmedia=view.findViewById<ImageView>(R.id.imageView2)
+        var like = view.findViewById<TextView>(R.id.userlike)
+        var comment =view.findViewById<TextView>(R.id.usercomment)
+        var Description = view.findViewById<TextView>(R.id.textView30)
 
 
         txtusername.text= element?.username
+        like.text=element?.userid
+        comment.text=element?.duration
+        Description.text=element?.title
 
         Glide.with(context)
-            .load(element?.small_poster)
+            .load(element?.username)
             .placeholder(R.drawable.baseline_download_24)
             .into(postmedia)
 
